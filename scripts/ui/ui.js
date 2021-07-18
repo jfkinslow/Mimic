@@ -221,6 +221,9 @@ ui.toggleDropdown = function() {
 	}
 }
 
+ui.newpc = function() {
+	console.log("Pushed New PC Button")	
+}
 
 
 //
@@ -249,6 +252,10 @@ ui.beforeLoad = function() {
 
 	$("#exit-fullscreen").click(function() {
 		ui.toggleFullscreen();
+	});
+	
+	$("#newpc-btn").click(function() {
+		ui.newpc();
 	});
 
 	$("#terminate-btn").click(function() {
